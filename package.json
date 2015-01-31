@@ -28,6 +28,8 @@
     "mocha": "^2.1.0",
     "serve": "^1.4.0",
     "phantomjs": "^1.9.15",
-    "mocha-phantomjs": "^3.5.3"
+    "mocha-phantomjs": "^3.5.3",
+    "jshint-stylish": "^1.0.0",
+    "jshint": "^2.6.0"
   }
 }

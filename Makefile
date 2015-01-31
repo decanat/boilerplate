@@ -7,6 +7,7 @@ LIB = $(wildcard lib/*.js)
 D=$(BINS)/duo
 M=$(BINS)/mocha
 P=$(BINS)/mocha-phantomjs
+L=$(BINS)/jshint
 S=$(BINS)/serve
 
 #
@@ -54,6 +55,12 @@ test/assets/%.js: test/%.js $(LIB)
 	@$(D) $< \
 		--development \
 		--stdout > $@
+
+
+# Check for code quality problems
+lint:
+	@$(L) ./lib/* \
+		--reporter ./node_modules/jshint-stylish/stylish.js
 
 
 # Serve test/ directory
