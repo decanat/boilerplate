@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/decanat/boilerplate/issues"
   },
-  "homepage": "https://github.com/decanat/boilerplate"
+  "homepage": "https://github.com/decanat/boilerplate",
+  "devDependencies": {
+    "duo": "^0.9.2"
+  }
 }
