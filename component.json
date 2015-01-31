@@ -11,5 +11,8 @@
   "keywords": [
     "decanat",
     "boilerplate"
-  ]
+  ],
+  "dependencies": {
+    "yiwn/each": "~0.3.0"
+  }
 }
