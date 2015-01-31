@@ -1,0 +1,15 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.0",
+  "description": "Boilerplate for Decanat components.",
+  "repository": "decanat/boilerplate",
+  "main": "lib/boilerplate.js",
+  "scripts": [
+    "lib/boilerplate.js",
+    "lib/add.js"
+  ],
+  "keywords": [
+    "decanat",
+    "boilerplate"
+  ]
+}
