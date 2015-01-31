@@ -14,5 +14,8 @@
   ],
   "dependencies": {
     "yiwn/each": "~0.3.0"
+  },
+  "development": {
+    "component/assert": "~0.5.0"
   }
 }

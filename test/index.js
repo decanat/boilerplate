@@ -29,6 +29,6 @@ describe('(else)', function(){
         // calls `boilerplate` with 'hello' as first argument
         var hello = boilerplate.bind(null, 'hello', 'region');
 
-        assert.throws(hello, /hello not supported/);
+        assert.throws(hello, Error);
     });
 });

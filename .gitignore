@@ -23,6 +23,8 @@ build
 node_modules
 components
 
+# Assets for browser testing
+test/assets
 
 # Users Environment Variables
 .lock-wscript

@@ -23,6 +23,22 @@ build/index.js: index.js $(LIB)
 test: node_modules
 	@$(M) -R $(REPORTER)
 
+# Run Mocha in browser
+test-browser: test/assets test/assets/index.js
+
+# Mocha assets needed for browser
+test/assets:
+	@mreakdir test/assets
+	@cd ./test/assets && \
+		ln -s ../../node_modules/mocha/mocha.css && \
+		ln -s ../../node_modules/mocha/mocha.js
+
+# Browser compatible tests
+test/assets/%.js: test/%.js $(LIB)
+	@$(D) $< \
+		--development \
+		--stdout > $@
+
 
 # Install npm modules
 node_modules: package.json
